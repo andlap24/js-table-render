@@ -1,8 +1,4 @@
-# Template for FE projects
+# js table rendering
 
-* ESlint
-* Stylelint
-* Linthtml
-* SCSS
-* PARCEL dist structure
-* building voluume version
+* npm i
+* npm start
