@@ -1,0 +1,21 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "renderPosts", function () {
+  return renderPosts;
+});
+var _apiApi = require('../api/api');
+async function renderPosts() {
+  const getPosts = await _apiApi.getDataFromServer('posts');
+  const container = document.querySelector('.posts');
+  let posts = '';
+  getPosts.forEach(post => {
+    const postHtml = `
+      <div class="post">
+        <h3>${post.title}</h2>
+        <p>${post.body}</p>
+      </div>`;
+    posts += postHtml;
+  });
+  container.innerHTML = posts;
+}
+renderPosts();

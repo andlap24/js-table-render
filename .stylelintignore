@@ -1,0 +1,6 @@
+dist
+.cache
+
+src/static/styles/reset.scss
+src/img
+src/fonts

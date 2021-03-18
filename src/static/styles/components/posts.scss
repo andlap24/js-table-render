@@ -1,0 +1,22 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  gap: 1.5vw;
+  place-content: center;
+
+  padding: 1vw;
+}
+
+.post {
+  padding: 1vw;
+  border-left: 8px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+
+  &__title {
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5vw;
+  }
+}

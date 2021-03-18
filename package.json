@@ -1,0 +1,62 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Boilerplate for FE projects",
+  "main": "./src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "build": "rm -rf ./www && parcel build --no-source-maps ./src/index.html --public-url ./ -d www",
+    "v-build": "npm run build && cp -r www v && mv v www && node voluumeReplaceLinks.js",
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint ./src",
+    "lint:html": "linthtml ./src"
+  },
+  "customDistStructure": {
+    "config": {
+      ".js": "js",
+      ".css": "css",
+      ".map": "maps",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png",
+        ".ico"
+      ],
+      "video": [
+        ".mp4"
+      ],
+      "fonts": [
+        ".ttf",
+        ".eot",
+        ".woff",
+        ".otf"
+      ]
+    }
+  },
+  "keywords": [
+    "boilerplate",
+    "template",
+    "frontend"
+  ],
+  "author": "velzepooz",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.4.1",
+    "@mate-academy/eslint-config": "0.0.12",
+    "@mate-academy/linthtml-config": "0.0.1",
+    "@mate-academy/stylelint-config": "0.0.9",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "eslint": "^7.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "node-sass": "^4.14.1",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-plugin-custom-dist-structure": "^1.1.14",
+    "sass": "^1.27.0",
+    "stylelint": "^13.6.1"
+  },
+  "dependencies": {
+    "branch-name": "^1.0.0",
+    "fetch": "^1.1.0",
+    "ncp": "^2.0.0"
+  }
+}

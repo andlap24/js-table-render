@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIMATCH</title>
+    <link rel="shortcut icon" type="image/ico" href="241fc1b06fa70d3eb31b78959b5d0beb">
+    <link rel="stylesheet" href="965b045b3cdfcdc72b3674d88f57a876">
+    <link rel="stylesheet" href="c53f1d9cf8ae444781e70e7341f5789f">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">POSTS</h1>
+    </header>
+    <main class="main">
+      <section class="main__posts">
+        <div class="posts" id="posts"></div>
+      </section>
+    </main>
+    <script src="148ca2a9dc9b68a334160db915c5d136"></script>
+  </body>
+</html>

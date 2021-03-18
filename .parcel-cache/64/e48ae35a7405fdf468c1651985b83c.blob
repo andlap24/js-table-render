@@ -1,0 +1,98 @@
+/* Parimatch */
+@font-face {
+  font-family: "Parimatch Thin";
+  src: url("../../fonts/Parimatch-Thin.otf");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Parimatch Light";
+  src: url("../../fonts/Parimatch-Light.otf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Parimatch";
+  src: url("../../fonts/Parimatch-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Parimatch Medium";
+  src: url("../../fonts/Parimatch-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Parimatch Bold";
+  src: url("../../fonts/Parimatch-Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Gilroy */
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../../fonts/Gilroy-Light.otf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Gilroy Normal";
+  src: url("../../fonts/Gilroy-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("../../fonts/Gilroy-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../../fonts/Gilroy-Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Circe */
+@font-face {
+  font-family: "Circe Regular";
+  src: url("../../fonts/Circe-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Circe Bold";
+  src: url("../../fonts/Circe-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Roboto */
+@font-face {
+  font-family: "Roboto Condensed Normal";
+  src: url("../../fonts/RobotoCondensed-Regular.woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../../fonts/RobotoCondensed-Bold.woff");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+* {
+  box-sizing: border-box;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+}
+.posts__title {
+  font-size: 2vw;
+}

@@ -1,0 +1,14 @@
+.header {
+  height: 3vw;
+  background-color: purple;
+
+  &__title {
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 3vw;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+  }
+}

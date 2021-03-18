@@ -1,0 +1,35 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "renderPosts", function () {
+  return renderPosts;
+});
+var _apiApi = require('../api/api');
+const startIndex = 0;
+const lastIndex = 20;
+function renderPosts() {
+  // const getData = await getDataFromServer('posts', startIndex, lastIndex);
+  const container = document.querySelector('#posts');
+  let posts = '';
+  getPosts.forEach(post => {
+    const postHtml = `
+      <div class="posts__post post">
+        <h3 class="post__title">${post.title}</h3>
+        <p class="post__text">${post.body}</p>
+      </div>`;
+    posts += postHtml;
+  });
+  window.addEventListener('scroll', () => {
+    const windowScrollValue = window.innerHeight + window.scrollY;
+    const bodyHeight = document.body.offsetHeight;
+    // eslint-disable-next-line no-console, max-len
+    if (windowScrollValue === bodyHeight) {
+      getPosts();
+    }
+  });
+  container.innerHTML = posts;
+}
+async function getPosts() {
+  const getData = await _apiApi.getDataFromServer('posts', startIndex, lastIndex);
+  return getData;
+}
+renderPosts();

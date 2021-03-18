@@ -1,0 +1,7 @@
+var _apiApi = require('./api/api');
+async function renderPosts() {
+  let posts = await _apiApi.getDataFromServer('posts');
+  let postsHtml = ``;
+}
+// eslint-disable-next-line no-console
+console.log('bie');

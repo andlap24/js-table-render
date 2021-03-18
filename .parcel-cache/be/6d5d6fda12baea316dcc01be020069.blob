@@ -1,0 +1,13 @@
+var _apiApi = require('./api/api');
+async function renderPosts() {
+  const posts = await _apiApi.getDataFromServer('posts').then(data => data);
+  const postsHtml = `
+    <div class="posts">
+      <h2>${posts}</h2>
+    </div>`;
+  const container = document.querySelector('.container');
+  container.innerHTML = postsHtml;
+}
+renderPosts();
+// eslint-disable-next-line no-console
+console.log(_apiApi.getDataFromServer('posts'));

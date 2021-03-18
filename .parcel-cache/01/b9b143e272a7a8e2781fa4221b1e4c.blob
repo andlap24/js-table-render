@@ -1,0 +1,106 @@
+/* Parimatch */
+@font-face {
+  font-family: "Parimatch Thin";
+  src: url("59014885def8b48b8b8af776a745734f");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Parimatch Light";
+  src: url("68d0f1529115a3cd7feed3a031486ab2");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Parimatch";
+  src: url("3320c420ad4e9a9e2819e5adee9477dc");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Parimatch Medium";
+  src: url("d081f9d4a2e151b50b183c1995e4a3c4");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Parimatch Bold";
+  src: url("89d171407d855e10050c5df9013b9b68");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Gilroy */
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("1a618990cb401174b394987e383fc455");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Gilroy Normal";
+  src: url("b648f03c2943c0b5e59d84a07ab3943f");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("62b54a03c881413e5f6682948f1d8edd");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("c98be93a0d56bc85deac61c3952c8978");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Circe */
+@font-face {
+  font-family: "Circe Regular";
+  src: url("9bdb1bbbc2d301bb36bb0b0474ca7319");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Circe Bold";
+  src: url("5c3c4f0ce651e4a06ba0aa01b97f5998");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+/* Roboto */
+@font-face {
+  font-family: "Roboto Condensed Normal";
+  src: url("ee7734f63fa1c161324c126ddc573d3f");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("a0c2f8ba14a4eeafdda3538df67e3f40");
+  font-style: normal;
+  font-weight: bold;
+}
+/* */
+* {
+  box-sizing: border-box;
+}
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  gap: 1.5vw;
+  place-content: center;
+}
+.post {
+  padding: 1vw;
+  border-left: 10px solid purple;
+  box-shadow: 2px 2px 2px black;
+}
+.post__title {
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+}

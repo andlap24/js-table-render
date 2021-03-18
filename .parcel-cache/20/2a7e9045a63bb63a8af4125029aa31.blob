@@ -1,0 +1,16 @@
+var _pages = require('./pages');
+async function renderPosts() {
+  const getPosts = await _pages.getDataFromServer('posts');
+  const container = document.querySelector('.posts');
+  let posts = '';
+  getPosts.forEach(post => {
+    const postHtml = `
+      <div class="post">
+        <h2>${post.title}</h2>
+        <p>${post.body}</p>
+      </div>`;
+    posts += postHtml;
+  });
+  container.innerHTML = posts;
+}
+renderPosts();
