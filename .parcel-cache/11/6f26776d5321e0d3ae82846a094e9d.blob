@@ -1,0 +1,9 @@
+var _pagesPosts = require('./pages/posts');
+try {
+  (async () => {
+    await _pagesPosts.initPosts();
+  })();
+} catch (err) {
+  // eslint-disable-next-line no-console
+  console.log(err);
+}

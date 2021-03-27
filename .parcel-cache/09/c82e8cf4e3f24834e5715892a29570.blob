@@ -1,0 +1,25 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "getPosts", function () {
+  return getPosts;
+});
+var _apiApi = require('../api/api');
+async function getPosts(startIndex = 0, lastIndex = 20) {
+  const posts = await _apiApi.getDataFromServer('posts', startIndex, lastIndex);
+  const container = document.querySelector('#posts');
+  let postHtml = '';
+  posts.forEach(post => {
+    postHtml += `
+      <div class="posts__post post">
+        <h3 class="post__title">${post.title}</h3>
+        <p class="post__text">${post.body}</p>
+      </div>`;
+  });
+  window.addEventListener('scroll', () => {
+    const windowScrollValue = window.innerHeight + window.scrollY;
+    const bodyHeight = document.body.offsetHeight;
+    // eslint-disable-next-line no-console, max-len
+    console.log(windowScrollValue === bodyHeight);
+  });
+  container.innerHTML = postHtml;
+}

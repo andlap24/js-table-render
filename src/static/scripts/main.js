@@ -1,3 +1,10 @@
-import { renderPosts } from './pages/posts';
+import { initPosts } from './pages/posts';
 
-renderPosts();
+try {
+  (async() => {
+    await initPosts();
+  })();
+} catch (err) {
+  // eslint-disable-next-line no-console
+  console.log(err);
+}

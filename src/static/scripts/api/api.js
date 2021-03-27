@@ -3,9 +3,15 @@
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 export const getDataFromServer = (data, start, end) => {
-  return global.fetch(`${BASE_URL}/${data}`)
-    .then(response => (!response.ok
-      ? new Error(`${response.status} - ${response.statusText}`)
-      : response.json()))
-    .then(dataFromServer => dataFromServer.slice(start, end).map(post => post));
+  // eslint-disable-next-line no-undef
+  return fetch(`${BASE_URL}/${data}`)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+
+      throw new Error(`${response.status} - ${response.statusText}`);
+    })
+    .then(dataFromServer => dataFromServer.slice(start, end).map(post => post))
+    .catch(err => console.log(err));
 };

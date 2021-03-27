@@ -1,0 +1,4 @@
+var _pagesPosts = require('./pages/posts');
+(async () => {
+  await _pagesPosts.initPosts();
+})();
