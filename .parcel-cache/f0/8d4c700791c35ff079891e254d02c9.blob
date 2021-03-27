@@ -1,5 +1,0 @@
-var _apiApi = require('./api/api');
-// eslint-disable-next-line no-console
-console.log(_apiApi.getDataFromServer('posts'));
-// eslint-disable-next-line no-console
-console.log('bie');

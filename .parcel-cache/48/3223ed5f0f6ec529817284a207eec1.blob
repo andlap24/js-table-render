@@ -1,7 +1,0 @@
-var _pagesPosts = require('./pages/posts');
-try {
-  _pagesPosts.initPosts();
-} catch (e) {
-  // eslint-disable-next-line no-console
-  console.log(err);
-}

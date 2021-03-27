@@ -1,2 +1,0 @@
-var _pagesPosts = require('./pages/posts');
-_pagesPosts.getPosts();
