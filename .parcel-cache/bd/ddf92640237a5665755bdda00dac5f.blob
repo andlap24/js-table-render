@@ -1,8 +1,0 @@
-var _apiApi = require('./api/api');
-async function renderPosts() {
-  let;
-}
-// eslint-disable-next-line no-console
-console.log('bie');
-// eslint-disable-next-line no-console
-console.log(JSON.stringify(_apiApi.getDataFromServer('posts')));
